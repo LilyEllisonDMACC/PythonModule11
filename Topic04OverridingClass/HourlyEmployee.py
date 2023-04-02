@@ -36,6 +36,9 @@ if __name__ == '__main__':
     HourEmp.give_raise(12)
     print(HourEmp.display())
 
+    #delete member:
+    del HourEmp
+
 
 """
 Testing/Results:

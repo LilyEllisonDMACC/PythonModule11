@@ -26,7 +26,7 @@ class SalariedEmployee(Emp):
 
     def display(self):
         #override base class display method
-        return Emp.display(self) + "\nStart Date: " + str(self._start_date) + "\nSalary: $" + str(self._salary) + ' per year.\n'
+        return Emp.display(self) + "\nStart Date: " + str(self._start_date) + "\nSalary: $" + str(self._salary) + ' per year\n'
 
 
 
@@ -37,6 +37,9 @@ if __name__ == '__main__':
     #update salary and display again:
     SalEmp.give_raise(45000)
     print(SalEmp.display())
+
+    #delete member:
+    del SalEmp
 
 
 """
